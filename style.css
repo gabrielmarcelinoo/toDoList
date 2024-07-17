@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #191919;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  color: white;
+}
+
+/* Título principal */
+h1 {
+  margin-bottom: 20px;
+  color: #FF5656;
+  text-align: center;
+  font-size: 34px;
+  
+}
+
+/* Estilo do formulário */
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px 20px;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #FF5656;
+  box-shadow: 0 0 10px rgba(255, 255, 253, 0.527);
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  background: #FF5656;
+  color: #ffffff;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #c44141;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+section {
+  border-top: 1px solid #eeeeee;
+  padding-top: 30px;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Itens da lista */
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #202020;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s;
+}
+
+li:hover {
+  background: #2c2c2c;
+}
+
+li input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: #fff;
+  margin-right: 10px;
+  width: 15px;
+  height: 15px;
+  padding: 5px;
+  border-radius: 3px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  
+}
+
+li input[type="checkbox"]:checked {
+  background-color: #FF5656;
+}
+
+li input[type="checkbox"]:checked + span {
+  text-decoration: line-through;
+  color: #FF5656;
+}
+
+li input[type="checkbox"]:checked::after {
+  content: '';
+  position: absolute;
+  top: 0.4px;
+  left: 5px;
+  width: 4px;
+  height: 10px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+
+li span {
+  flex: 1;
+  font-size: 16px;
+  color: #fff;
+}
+
+
+ li .delete-icon {
+  background: none;
+  border: none;
+  color: #d6d6d6;
+  cursor: pointer;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+li .delete-icon:hover {
+  color: #919191;
+}
